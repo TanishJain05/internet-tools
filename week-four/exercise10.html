@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+    <script src="js/square.js"></script>
+</head>
+<body>
+    <h1>This is square function:</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number" />
+    <button onclick="enter()">Enter</button>
+    <div>
+        <h2 id="output"></h2>
+    </div>
+    <script>
+        function enter(){
+            let input=document.getElementById("numberInput").value;
+            const squareIt = square(5);
+            document.getElementById("output").textContent=`The square of 5 is ${squareIt(5)}`;
+        }
+    </script>
+</body>
+</html>
